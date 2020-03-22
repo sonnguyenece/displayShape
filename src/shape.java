@@ -33,15 +33,15 @@ public class shape {
                     for (int i = 1; i <= triangleSide; i++) {
                         for (int j = 1; j <= i; j++) {
                             System.out.print("*");
-                        } System.out.print("\n");
+                        }
+                        System.out.print("\n");
                     }
                     System.out.print("\n");
-                       int triangleSide2=triangleSide   ;
-                    for (int i = 1,j; i <= triangleSide; i++) {
-                        for (j = triangleSide2; j >= 1;j--) {
+                    for (int i = 1, j; i <= triangleSide; i++) {
+                        for (j = triangleSide - i; j >= 0; j--) {
                             System.out.print("*");
-                        } System.out.print("\n");
-                        triangleSide2--;
+                        }
+                        System.out.print("\n");
                     }
                     System.out.print("\n");
 
@@ -50,17 +50,17 @@ public class shape {
                 case 3: {
                     System.out.println("Input isosceles rectangle height  : ");
                     int isoTriHeight = scn.nextInt();
-                    int blankWidth=isoTriHeight-1;
-                    int isoRecWidth=1;
+                    int blankWidth = isoTriHeight - 1;
+                    int isoRecWidth = 1;
                     for (int i = 1; i <= isoTriHeight; i++) {
-                        for (int j = 1; j<= blankWidth; j++) {
+                        for (int j = 1; j <= blankWidth; j++) {
                             System.out.print(" ");
                         }
-                        for (int k = 1; k<= isoRecWidth; k++) {
+                        for (int k = 1; k <= isoRecWidth; k++) {
                             System.out.print("*");
                         }
                         blankWidth--;
-                        isoRecWidth+=2;
+                        isoRecWidth += 2;
                         System.out.print("\n");
                     }
                     System.out.print("\n");
