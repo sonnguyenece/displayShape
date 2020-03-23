@@ -9,14 +9,14 @@ public class shape {
             System.out.println("2.Print the square triangle (The corner is square at 4 different angles: top-left, top-right, botton-left, botton-right)");
             System.out.println("3.Print isosceles triangle");
             System.out.println("4.Exit");
-            System.out.println("Input your selection : ");
+            System.out.print("Input your selection : ");
             selection = scn.nextInt();
 
             switch (selection) {
                 case 1: {
-                    System.out.println("Input rectangle width  : ");
+                    System.out.print("Input rectangle width  : ");
                     int recWidth = scn.nextInt();
-                    System.out.println("Input rectangle height : ");
+                    System.out.print("Input rectangle height : ");
                     int recHeight = scn.nextInt();
                     for (int i = 1; i <= recHeight; i++) {
                         for (int j = 1; j <= recWidth; j++) {
@@ -28,7 +28,7 @@ public class shape {
                     break;
                 }
                 case 2: {
-                    System.out.println("Input rectangle side  : ");
+                    System.out.print("Input rectangle side  : ");
                     int triangleSide = scn.nextInt();
                     for (int i = 1; i <= triangleSide; i++) {
                         for (int j = 1; j <= i; j++) {
@@ -48,7 +48,7 @@ public class shape {
                     break;
                 }
                 case 3: {
-                    System.out.println("Input isosceles rectangle height  : ");
+                    System.out.print("Input isosceles rectangle height  : ");
                     int isoTriHeight = scn.nextInt();
                     int blankWidth = isoTriHeight - 1;
                     int isoRecWidth = 1;
